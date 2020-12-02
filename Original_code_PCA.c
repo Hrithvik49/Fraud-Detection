@@ -45,7 +45,7 @@ typedef struct key_value
 int main()
 {
 	// Initialize the file pointers
-	FILE *fp = fopen("F:\\College Study Material\\Minor\\Dataset\\Dataset V1-V28\\Credit_card_Training.csv", "r"); //open in read mode
+	FILE *fp = fopen("E:\\Study Material\\New folder\\Book1.csv", "r"); //open in read mode
 	if (!fp)
 	{
 		printf("error occured");
@@ -54,7 +54,7 @@ int main()
 	char buff[1024];      								  // stores the first 1024 lines into buff
 	int row_count = 0;
 	int field_count = 0;
-	dict values[999];  										   //array to structs to store values
+	dict values[210];  										   //array to structs to store values
 
 	int i = 0;
 	while(fgets(buff, 1024, fp))
@@ -242,8 +242,8 @@ int main()
 
 void printValues(dict values[])
 {
-	for(int i =0; i<999; i++)
+	for(int i =0; i<210; i++)
 	{
-		printf("Time -> %d, V1 -> %d, V2 -> %d, V3 -> %d, V4 -> %d, V5 -> %d, V6 -> %d, V7 -> %d, V8 -> %d, V9 -> %d, V10 -> %d, V11 -> %d, V12 -> %d, V13 -> %d, V14 -> %d, V15 -> %d, V16 -> %d, V17 -> %d, V18 -> %d, V19 -> %d, V20 -> %d, V21 -> %d, V22 -> %d, V23 -> %d, V24 -> %d, V25 -> %d, V26 -> %d, V27 -> %d, V28 -> %d, Amount -> %d, Class -> %d \n \n", values[i].Time, values[i].V1, values[i].V2, values[i].V3, values[i].V4, values[i].V5, values[i].V6, values[i].V7, values[i].V8, values[i].V9, values[i].V10, values[i].V11, values[i].V12, values[i].V13, values[i].V14, values[i].V15, values[i].V16, values[i].V17, values[i].V18, values[i].V19, values[i].V20, values[i].V21, values[i].V22, values[i].V23, values[i].V24, values[i].V25, values[i].V26, values[i].V27, values[i].V28, values[i].Amount, values[i].Class);
+		printf("Time -> %s, V1 -> %s, V2 -> %s, V3 -> %s, V4 -> %s, V5 -> %s, V6 -> %s, V7 -> %s, V8 -> %s, V9 -> %s, V10 -> %s, V11 -> %s, V12 -> %s, V13 -> %, V14 -> %s, V15 -> %s, V16 -> %s, V17 -> %s, V18 -> %s, V19 -> %s, V20 -> %s, V21 -> %s, V22 -> %s, V23 -> %s, V24 -> %s, V25 -> %s, V26 -> %s, V27 -> %s, V28 -> %s, Amount -> %s, Class -> %s \n \n", values[i].Time, values[i].V1, values[i].V2, values[i].V3, values[i].V4, values[i].V5, values[i].V6, values[i].V7, values[i].V8, values[i].V9, values[i].V10, values[i].V11, values[i].V12, values[i].V13, values[i].V14, values[i].V15, values[i].V16, values[i].V17, values[i].V18, values[i].V19, values[i].V20, values[i].V21, values[i].V22, values[i].V23, values[i].V24, values[i].V25, values[i].V26, values[i].V27, values[i].V28, values[i].Amount, values[i].Class);
 	}
 }
