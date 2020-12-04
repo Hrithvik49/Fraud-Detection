@@ -172,7 +172,7 @@ void calculateFitness(struct Individual* obj)
     obj->fitness = 0;
     for (int i = 0; i < obj->geneLength; i++)
     {
-        if (obj->genes[i] == 1)
+        if (obj->genes[i] == 0)
         {
             ++obj->fitness;
         }
